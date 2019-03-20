@@ -15,7 +15,7 @@ Only having the basic JavaScript syntax knowledge, this challenge was a steep le
 Knowing only the basic syntax, the first day was very difficult to understand!
 I learnt the use of data-* global attributes to have personal data pockets that are specific to your project that can be used link your HTML and JavaScript. 
 
-The ability to utilise the users keyboard input using the <kbd> tag. This was used to specify which key will be associated with what sound from the @wesbos provided sounds. 
+The ability to utilise the users keyboard input using the ```<kbd>``` tag. This was used to specify which key will be associated with what sound from the @wesbos provided sounds. 
   
 I learnt the use of document.querySelector to select the data-keys and audio.play() to actually play the audio in the HTML code. 
 
