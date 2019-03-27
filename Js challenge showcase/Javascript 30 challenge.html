@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript Challenge | Home </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="src/main.css">
+</head>
+<body>
+<!--Navigation of project website-->
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10"> 
+                    <h1 id="title">JavaScript 30-day Challenge</h1>
+                </div>
+                <div class="col-md-2">
+                    <ul> 
+                        <li><a href="#" class="active">Projects</a></li>
+                        <li><a href="#" class="active">About Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!-- Project gallery section-->
+    <section class="gallery">
+        <div class="container">
+            <div class="row">
+<!-- Section contains 3 projects-->
+                <div class="col-xs-12 col-md-4">
+                    <figure class="img-container">
+                        <img src="C:\Users\Ikra Pervaiz\Documents\Coding\Js web project\src\coming-soon-2550190_1280.jpg">
+                        <figcaption id="img-content">
+                            <h2 class="title">Day2: JS Clock</h2>
+                            <h3 class="category">Projects</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <figure class="img-container">
+                        <img src="C:\Users\Ikra Pervaiz\Documents\Coding\Js web project\src\coming-soon-2550190_1280.jpg">
+                        <figcaption class="img-content">
+                            <h2 class="title">Day15: local storage</h2>
+                            <h3 class="category">Projects</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                        <figure class="img-container">
+                            <img src="C:\Users\Ikra Pervaiz\Documents\Coding\Js web project\src\coming-soon-2550190_1280.jpg">
+                            <figcaption class="img-content">
+                                <h2 class="title">Day10: checkboxes</h2>
+                                <h3 class="category">Projects</h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+            </div>
+        </div>
+<!-- this contains 2 projects-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <figure class="img-container">
+                            <img src="C:\Users\Ikra Pervaiz\Documents\Coding\Js web project\src\coming-soon-2550190_1280.jpg">
+                            <figcaption class="img-content">
+                                <h2 class="title">Day11: Videoplayer</h2>
+                                <h3 class="category">Projects</h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <figure class="img-container">
+                            <img src="C:\Users\Ikra Pervaiz\Documents\Coding\Js web project\src\coming-soon-2550190_1280.jpg">
+                            <figcaption class="img-content">
+                                <h2 class="title">Day6: Type ahead</h2>
+                                <h3 class="category">Projects</h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+    <!-- this contains 1 projects-->
+            <div class="container">
+                <div class="row">
+                    <div class="column-xs-12 col-md-12">
+                        <figure class="img-container">
+                            <img src="C:\Users\Ikra Pervaiz\Documents\Coding\Js web project\src\coming-soon-2550190_1280.jpg">
+                            <figcaption class="img-content">
+                                <h2 class="title">Day5: Flex gallery</h2>
+                                <h3 class="category">Projects</h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="grid">
+                <div class="column-xs-12"> 
+                    <ul class="social">
+                        <li><a href="https://github.com/IkraP" target="_blank"><i class="fab fa-github grey fa-lg"></i></a></li>
+                        <li><a href="https://www.instagram.com/chemtocode/" target="_blank"><i class="fab fa-instagram grey fa-lg"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+
+
+<script>
+
+const imgContent = document.querySelectorAll('figcaption');
+const image = document.querySelectorAll('img');
+
+function showImgContent(e) {
+    let x = e.offsetX;
+    let y = e.offsetY;
+
+    imgContent.forEach(img => {
+        img.style.left = `${x}px`
+        img.style.top = `${y}px`
+    })
+}
+
+image.forEach(img => img.addEventListener('mousemove', showImgContent));
+
+
+</script>
+</html>

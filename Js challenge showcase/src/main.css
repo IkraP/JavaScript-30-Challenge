@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,500,700');
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  background: white;
+  text-rendering: optimizeLegibility;
+
+
+}
+
+/* Navigation bar   */
+
+ul li {
+  margin: 0 1.5rem 0 0;
+  list-style-type: none;
+}
+
+nav a {
+  color: #41575f;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-weight: 400;
+}
+
+nav a:hover {
+  color: #e26071;
+}
+
+nav a:active {
+  color: #e26071;
+}
+
+nav {
+  padding: 2.5rem 0 2.5rem 0;
+  overflow: hidden;
+
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding: 10px 10px;
+
+}
+
+nav li:nth-child(2) {
+  margin: 0;
+}
+
+#title {
+  color:#f7b69f;
+  font-size: 30px;
+  padding-top: 10px;
+  font-weight: 700;
+}
+
+
+/* Gallery of projects    */
+
+.gallery {
+  padding: 0 0 4rem 0;
+}
+
+.img-container {
+  width: 100%;
+  height: 500px;
+  cursor: pointer;
+  overflow: hidden;
+
+}
+
+.img-container:hover {
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: 500px;
+  object-fit: fill;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+
+}
+
+
+img:hover {
+  transform:scale(1.05);
+}
+
+/* The figcaption styling */
+
+figcaption {
+  position: absolute;
+  z-index: 1;
+  white-space: nowrap;
+  display: none;
+  padding: 1rem;
+  background: white;
+  font-weight: 400;
+
+}
+
+figure:hover figcaption{
+  display: block;
+}
+
+
+figcaption .title {
+  font-size: 20px;
+  color: #e25f70;
+}
+
+figcaption .category {
+  font-size: 13px;
+  color: #4c384a;
+
+}
+
+
+/* footer */
+
+.social, .copyright {
+  margin: 1rem;
+}
+
+.social li {
+  display: inline-block;
+
+}
+
+footer {
+  padding: 1rem 0;
+  background: #787878;
+  text-align: center;
+}
+
+.grey {
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .img-container:hover {
+    display: none
+  }
+}
